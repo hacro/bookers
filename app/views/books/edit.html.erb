@@ -1,6 +1,6 @@
 <h1>EDIT PAGE</h1>
 
-<%= form_with model: @book, url: update_book_path(@book.id), method: :patch do |f| %>
+<%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
 
     <h3>TITLE</h3>
     <%= f.text_field :title %>

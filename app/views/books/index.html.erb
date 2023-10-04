@@ -7,10 +7,13 @@
     <h3>感想</h3>
     <span><%= book.body %></span>
     <span>
-        <%= link_to 'SHOW', detail_path(book.id) %>
+        <%= link_to 'SHOW', book_path(book.id) %>
     </span>
     <span>
         <%= link_to 'EDIT', edit_book_path(book.id) %>
+    </span>
+    <span>
+        <%= link_to 'DELETE', book_path(book.id), method: :delete, data: {confirm: "本当に削除しますか？"} %>
     </span>
 <% end %>
 
