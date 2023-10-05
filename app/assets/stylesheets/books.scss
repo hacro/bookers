@@ -1,3 +1,47 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.container{
+    display: block;
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+
+    h1{
+        display: inline-block;
+        margin-bottom: 40px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Train One', cursive;
+        border-bottom: 3px solid;
+    }
+    h3{
+        font-size: 24px;
+        color: #727273;
+    }
+    p{
+        color: #727273;
+        font-size: 16px;
+    }
+    .start-link{
+        display: block;
+        width: 200px;
+        height: 60px;
+        margin: 50px auto;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Train One', cursive;
+        background-color: black;
+        border: none;
+        &:hover {
+            cursor: pointer !important;
+        }
+
+        .start-text{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
