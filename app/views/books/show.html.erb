@@ -7,3 +7,10 @@
 
 <h3>Book's Feeling</h3>
 <p><%= @book.body %></p>
+
+<span>
+    <%= link_to 'EDIT', edit_book_path(@book.id) %>
+</span>
+<span>
+    <%= link_to 'BACK', '/books' %>
+</span>
