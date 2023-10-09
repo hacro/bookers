@@ -1,0 +1,10 @@
+@import 'color';
+
+.destroy-msg{
+    display: inline-block;
+    margin: 20px 0 0 50px;
+    color: $success;
+    font-size: 18px;
+    border-bottom: 1px;
+}
+
