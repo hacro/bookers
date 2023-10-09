@@ -1,5 +1,6 @@
 
 <%= flash[:success] %>
+<%= flash[:update_error] %>
 <h1>EDIT PAGE</h1>
 
 <%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
@@ -10,8 +11,9 @@
     <h3>FEELING</h3>
     <%= f.text_area :body %>
 
-    <%= f.submit 'SUBMIT' %>
+    <%= f.submit 'Update Book' %>
 <% end %>
+
 
 <span>
     <%= link_to 'SHOW', book_path(@book.id) %>
